@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# Chapter 1
-declare -a chapter1=(
+declare -a chapters=(
   "csharp/CrackingTheCodingInterview/_1_1/IsUnique"
   "csharp/CrackingTheCodingInterview/_1_2/CheckPermutation"
   "csharp/CrackingTheCodingInterview/_1_3/Urlify"
@@ -13,13 +12,24 @@ declare -a chapter1=(
   "csharp/CrackingTheCodingInterview/_1_9/StringRotation"
 )
 
-for i in "${chapter1[@]}"
+# Create the solution
+root=csharp/CrackingTheCodingInterview
+mkdir -p $root
+pushd $root
+dotnet new sln
+popd
+
+for i in "${chapters[@]}"
 do
+  # Create the project
   mkdir -p $i
+  name=$(basename -- "$i")
   pushd $i
-  dotnet new console
+  dotnet new console --language C#
+  popd
+
+  # Add the project to the solution
+  pushd $root
+  dotnet sln add "../../${i}/${name}.csproj"
   popd
 done
-
-cd csharp/CrackingTheCodingInterview
-dotnet new sln
