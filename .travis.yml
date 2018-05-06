@@ -5,3 +5,4 @@ dotnet: 1.1.5
 script:
  - cd csharp/CrackingTheCodingInterview
  - dotnet restore
+ - dotnet build
