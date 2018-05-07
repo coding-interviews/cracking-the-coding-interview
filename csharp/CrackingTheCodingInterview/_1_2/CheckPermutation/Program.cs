@@ -1,4 +1,5 @@
 ﻿using System;
+using Utilities;
 
 namespace CheckPermutation
 {
@@ -24,20 +25,7 @@ namespace CheckPermutation
       for (int i = 0; i < inputs.Length; i++) {
         string a = inputs[i][0];
         string b = inputs[i][1];
-        Console.WriteLine($"{Display(a),-8} | {Display(b),-8} | {Solutions.AreIdenticalSorted(a, b),-10} | {Solutions.HaveIdenticalCharCount(a, b),-10} ");
-      }
-    }
-
-    private static string Display(string input) {
-      switch (input) {
-        case null:
-          return "<null>";
-
-        case "":
-          return "<empty>";
-
-        default:
-          return input;
+        Console.WriteLine($"{Display.String(a),-8} | {Display.String(b),-8} | {Solutions.AreIdenticalSorted(a, b),-10} | {Solutions.HaveIdenticalCharCount(a, b),-10} ");
       }
     }
   }

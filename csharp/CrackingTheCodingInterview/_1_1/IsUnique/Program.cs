@@ -1,4 +1,5 @@
 ﻿using System;
+using Utilities;
 
 namespace IsUnique
 {
@@ -22,7 +23,7 @@ namespace IsUnique
       Console.WriteLine("Input    | Output");
       Console.WriteLine("-------- | ------");
       foreach (string input in inputs) {
-        Console.WriteLine($"{Display(input), -8} | {Solutions.UsingASet(input)}");
+        Console.WriteLine($"{Display.String(input), -8} | {Solutions.UsingASet(input)}");
       }
     }
   }
