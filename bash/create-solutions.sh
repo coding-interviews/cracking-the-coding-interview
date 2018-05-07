@@ -10,6 +10,7 @@ declare -a chapters=(
   "csharp/CrackingTheCodingInterview/_1_7/RotateMatrix"
   "csharp/CrackingTheCodingInterview/_1_8/ZeroMatrix"
   "csharp/CrackingTheCodingInterview/_1_9/StringRotation"
+  "csharp/CrackingTheCodingInterview/Utilities"
 )
 
 # Create the solution

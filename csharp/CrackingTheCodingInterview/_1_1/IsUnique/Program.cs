@@ -25,18 +25,5 @@ namespace IsUnique
         Console.WriteLine($"{Display(input), -8} | {Solutions.UsingASet(input)}");
       }
     }
-
-    private static string Display(string input) {
-      switch (input) {
-        case null:
-          return "<null>";
-
-        case "":
-          return "<empty>";
-
-        default:
-          return input;
-      }
-    }
   }
 }
