@@ -1,0 +1,8 @@
+language: csharp
+solution: csharp/CrackingTheCodingInterview/CrackingTheCodingInterview.sln
+mono: none
+dotnet: 2.1.4
+script:
+ - cd csharp/CrackingTheCodingInterview
+ - dotnet restore
+ - dotnet build
