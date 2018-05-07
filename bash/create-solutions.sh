@@ -9,7 +9,6 @@ declare -a chapters=(
   "csharp/CrackingTheCodingInterview/_1_6/StringCompression"
   "csharp/CrackingTheCodingInterview/_1_7/RotateMatrix"
   "csharp/CrackingTheCodingInterview/_1_8/ZeroMatrix"
-  "csharp/CrackingTheCodingInterview/_1_9/StringRotation"
 
   "csharp/CrackingTheCodingInterview/_2_1/RemoveDuplicates"
   "csharp/CrackingTheCodingInterview/_2_2/KthToTheLast"
