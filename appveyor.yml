@@ -1,0 +1,8 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+before_build:
+  - cmd: dotnet --version
+  - cmd: cd csharp/CrackingTheCodingInterview
+  - cmd: dotnet restore
+build_script:
+  - cmd: dotnet build
