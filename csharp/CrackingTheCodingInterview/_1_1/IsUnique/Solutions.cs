@@ -1,20 +1,28 @@
-﻿using System.Collections.Generic;
-namespace IsUnique {
-  static class Solutions {
-    public static bool UsingASet(string input) {
-      if (string.IsNullOrEmpty(input)) return true;
+﻿//
+// Copyright (c) 2018 Ibrahim El Far. All Rights Reserved.
+// Released under MIT License. See LICENSE file for details.
+//
 
-      HashSet<char> set = new HashSet<char>();
+using System.Collections.Generic;
 
-      for (int i = 0; i < input.Length; i++) {
-        if (set.Contains(input[i])) {
-          return false;
-        }
+namespace IsUnique
+{
+	static class Solutions
+	{
+		public static bool UsingASet(string input) {
+			if (string.IsNullOrEmpty(input)) return true;
 
-        set.Add(input[i]);
-      }
+			HashSet<char> set = new HashSet<char>();
 
-      return true;
-    }
-  }
+			for (int i = 0; i < input.Length; i++) {
+				if (set.Contains(input[i])) {
+					return false;
+				}
+
+				set.Add(input[i]);
+			}
+
+			return true;
+		}
+	}
 }

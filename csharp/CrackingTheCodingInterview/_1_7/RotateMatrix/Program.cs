@@ -1,9 +1,14 @@
+//
+// Copyright (c) 2018 Ibrahim El Far. All Rights Reserved.
+// Released under MIT License. See LICENSE file for details.
+//
+
 using System;
 
 namespace RotateMatrix
 {
-  static class Program
-  {
+	static class Program
+	{
 		static int[,] GenerateMatrix(int size) {
 			var count = 1;
 			var matrix = new int[size, size];
@@ -19,20 +24,16 @@ namespace RotateMatrix
 		static void WriteMatrixToConsole(int[,] matrix) {
 			int size = matrix.GetLength(0);
 
-			for (var row = 0; row < size; row++)
-			{
-				for (var col = 0; col < size; col++)
-				{
+			for (var row = 0; row < size; row++) {
+				for (var col = 0; col < size; col++) {
 					Console.Write($"{matrix[row, col],-2} ");
 				}
 				Console.WriteLine();
 			}
 		}
 
-    static void Main(string[] args)
-    {
-			for (var size = 1; size <= 5; size++)
-			{
+		static void Main(string[] args) {
+			for (var size = 1; size <= 5; size++) {
 				var matrix = GenerateMatrix(size);
 				WriteMatrixToConsole(matrix);
 				Console.WriteLine("----------");
@@ -40,6 +41,6 @@ namespace RotateMatrix
 				WriteMatrixToConsole(matrix);
 				Console.WriteLine("----------");
 			}
-    }
-  }
+		}
+	}
 }
