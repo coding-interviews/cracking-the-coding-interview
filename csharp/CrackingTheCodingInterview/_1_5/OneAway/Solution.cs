@@ -1,4 +1,10 @@
-﻿using System;
+﻿//
+// Copyright (c) 2018 Ibrahim El Far. All Rights Reserved.
+// Released under MIT License. See LICENSE file for details.
+//
+
+using System;
+
 namespace OneAway
 {
 	static class Solution
