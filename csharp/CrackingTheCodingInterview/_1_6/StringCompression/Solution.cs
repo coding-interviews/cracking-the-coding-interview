@@ -1,4 +1,9 @@
-﻿using System;
+﻿//
+// Copyright (c) 2018 Ibrahim El Far. All Rights Reserved.
+// Released under MIT License. See LICENSE file for details.
+//
+
+using System;
 using System.Text;
 
 namespace StringCompression
@@ -9,23 +14,17 @@ namespace StringCompression
 	{
 		private static void WalkString(string source, DoSomething action) {
 			int consecutiveCount = 1;
-      for (int i = 0; i < source.Length; i++)
-      {
-        if (i == source.Length - 1 || source[i + 1] != source[i])
-        {
+			for (int i = 0; i < source.Length; i++) {
+				if (i == source.Length - 1 || source[i + 1] != source[i]) {
 					action(consecutiveCount, source[i]);
-          consecutiveCount = 1;
-        }
-        else
-        {
-          consecutiveCount++;
-        }
-      }
+					consecutiveCount = 1;
+				} else {
+					consecutiveCount++;
+				}
+			}
 		}
-		public static string Compress(string source)
-		{
-			if (String.IsNullOrEmpty(source))
-			{
+		public static string Compress(string source) {
+			if (String.IsNullOrEmpty(source)) {
 				return source;
 			}
 
