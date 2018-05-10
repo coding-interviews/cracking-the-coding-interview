@@ -2,11 +2,11 @@
 namespace RotateMatrix
 {
 	static class Solution
-  {
+	{
 		public static void Rotate(int[,] matrix) {
 			int size = matrix.GetLength(0);
 
-			for (int layer = 0; layer < size/2; layer++) { // layer depth
+			for (int layer = 0; layer < size / 2; layer++) { // layer depth
 				int first = layer;
 				int last = size - layer - 1; // layer length
 
@@ -32,5 +32,5 @@ namespace RotateMatrix
 
 			}
 		}
-  }
+	}
 }
