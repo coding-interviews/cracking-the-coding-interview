@@ -18,5 +18,11 @@ namespace Utilities.LinkedLists
 
 			return result.ToString();
 		}
+
+		public static string Node(Node head) {
+			if (head == null) return "<null>";
+
+			return head.Data.ToString();
+		}
   }
 }
