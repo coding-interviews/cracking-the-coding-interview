@@ -12,7 +12,6 @@ declare -a chapters=(
 
   "csharp/CrackingTheCodingInterview/_2_1/RemoveDuplicates"
   "csharp/CrackingTheCodingInterview/_2_2/KthToTheLast"
-  "csharp/CrackingTheCodingInterview/_2_3/DeleteMiddleNode"
   "csharp/CrackingTheCodingInterview/_2_4/Partition"
   "csharp/CrackingTheCodingInterview/_2_5/SumLists"
   "csharp/CrackingTheCodingInterview/_2_6/Palindrome"
