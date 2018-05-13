@@ -217,6 +217,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_10_11", "_10_11", "{F06FD5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeaksAndValleys", "_10_11\PeaksAndValleys\PeaksAndValleys.csproj", "{8C4CEDC6-6AB1-4904-A6A2-B8B5FCB81B85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities.LinkedLists", "Utilities.LinkedLists\Utilities.LinkedLists.csproj", "{1B296BC4-BD04-436A-B318-188C66E8A192}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -878,6 +880,18 @@ Global
 		{8C4CEDC6-6AB1-4904-A6A2-B8B5FCB81B85}.Release|x64.Build.0 = Release|x64
 		{8C4CEDC6-6AB1-4904-A6A2-B8B5FCB81B85}.Release|x86.ActiveCfg = Release|x86
 		{8C4CEDC6-6AB1-4904-A6A2-B8B5FCB81B85}.Release|x86.Build.0 = Release|x86
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Debug|x64.Build.0 = Debug|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Debug|x86.Build.0 = Debug|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Release|x64.ActiveCfg = Release|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Release|x64.Build.0 = Release|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Release|x86.ActiveCfg = Release|Any CPU
+		{1B296BC4-BD04-436A-B318-188C66E8A192}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4D577B18-93C1-4808-A1FA-6764B232118F} = {0DAF723A-9AE0-44C7-A2E3-C54D860E4E38}
